@@ -1,22 +1,13 @@
-let a = 1;
-let b = 2;
-
-let c = b;
-b = a;
-a = c;
-
-console.log(a);
-console.log(b);
-
 /**
- * avec Destructuring arrays ça fais simplement comme ça
+ * Destructuring de l'objet
  */
-console.log("###########");
 
-let d = 3;
-let e = 4;
+const myObject = {
+    nom : "John",
+    age : 32,
+    present: () => console.log("hello")
+}
 
-[d,e] = [e,d];
+const {nom, present:aliasDePresent} = myObject; // la destructuring d'un objet n'est pas suivi d'ordre comme dans la destructiring d'Arrays mais il suivi le nom de la propriétés dans l'objet
 
-console.log(d);
-console.log(e);
+aliasDePresent();
