@@ -1,6 +1,2 @@
-let i = 60;
-
-for( let i = 0; i < 10; i++){
-    console.log(i);
-}
-console.log(i);
+const myFunction  = arg => arg * 5;// function qui recoit arg et retourne la valeur de arg * 5 et on affecte dans un fonction pour qu'il ne reste en fontion anonyme et on peut réutiliser après
+console.log(myFunction(2));//ça nous donne 10
