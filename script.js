@@ -1,18 +1,27 @@
-const classicFunction = function (){
-    console.log(this);
+const mesNombres = [40,5,14,5,7,8];
+
+function makeMeSum(nombres){
+    let sum = 0;
+    for (let i = 0; i < nombres.length ; i++){
+        sum += nombres[i];
+    }
+    return sum;
 }
 
-const arrowFunction = () => console.log(this);
+console.log(makeMeSum(mesNombres));
 
-const classicFunctionBind = classicFunction.bind(this);
+/**
+ * Paramètre Rest d'ES6
+ * Prend la valeur libre "..." avant la variable
+ */
 
-const me = {
-    name : "John",
-    presentClassic : classicFunction,
-    presentArrow : arrowFunction,
-    presentClassicBind : classicFunctionBind
+
+const makeMeSumRest = (...nombres) => {
+    let sum = 0;
+    for (let i = 0; i < nombres.length ; i++){
+        sum += nombres[i];
+    }
+    return sum;
 }
 
-me.presentClassic();//donné l'objet me (this fonction parent)
-me.presentArrow();//donne l'objet window (l'objet global)
-me.presentClassicBind();
+console.log(makeMeSumRest(40,5,14,5,7,8));
