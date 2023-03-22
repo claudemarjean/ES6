@@ -1,7 +1,12 @@
 
 const me = {
     name: "John",
-    presentThreeFriends: (friend1, friend2, friend3) => `Tu connais ${friend1}, ${friend2} et ${friend3} ?` // fonction qui prend plusieurs paramètres
+    presentFriends: friend => {
+        const presentation = `Tu connais ${friend} ?`;
+        console.log(presentation);
+        return presentation;
+    }
 }
 
-console.log(me.presentThreeFriends("John", "légende", "steve"));
+me.presentFriends("Kevin");
+
