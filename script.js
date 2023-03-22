@@ -1,2 +1,18 @@
-const myFunction  = arg => arg * 5;// function qui recoit arg et retourne la valeur de arg * 5 et on affecte dans un fonction pour qu'il ne reste en fontion anonyme et on peut réutiliser après
-console.log(myFunction(2));//ça nous donne 10
+const me = {
+    name: "John",
+    presentFriend: function (friend){
+        return "Tu connais "+ friend + "?";
+    }
+}
+
+console.log(me.presentFriend("claude"));
+
+/**
+ * ES6
+ */
+const me2 = {
+    name: "John",
+    presentFriend: friend => "Tu connais "+ friend + "?"
+}
+
+console.log(me.presentFriend("Marjean"));
