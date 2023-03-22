@@ -1,40 +1,22 @@
-const tableau = [1,2,5];
-console.log(tableau);
+let a = 1;
+let b = 2;
 
-
-const d = tableau[0];
-const e = tableau[1];
-
-console.log(d);
-console.log(e);
-
-
-console.log("###############");
-/**
- * Destructuring Arrays pour simplifier
- */
-
-const nombres = [1,2,5];
-
-const [a,b] = nombres;
+let c = b;
+b = a;
+a = c;
 
 console.log(a);
 console.log(b);
 
-console.log("###############");
 /**
- * Avec le paramètre REST
+ * avec Destructuring arrays ça fais simplement comme ça
  */
+console.log("###########");
 
-const [x,...y] = nombres; //y prend les 2 valeur libre de nombre 2,5 et il va mettre dans un tableau
+let d = 3;
+let e = 4;
 
-console.log(x);
-console.log(y);//[2,5]
+[d,e] = [e,d];
 
-console.log("###############");
-/**
- * et si je veux sauter la valeur 2 je peux faire comme ceci
- */
-const[g,,h] = nombres;
-console.log(g);
-console.log(h);
+console.log(d);
+console.log(e);
