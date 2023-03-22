@@ -1,0 +1,1 @@
+# note ES6 dans https://docs.google.com/document/d/1Ex_G8keba4W2wiH85Yky7AQ9mEu_w7vKDiV3e3h0NI0/edit
