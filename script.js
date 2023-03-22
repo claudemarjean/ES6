@@ -1,7 +1,7 @@
 
-const me2 = {
+const me = {
     name: "John",
-    presentMe: () => "Hello" //fonction qui ne reçoit pas d'argument on utilise ()
+    presentThreeFriends: (friend1, friend2, friend3) => `Tu connais ${friend1}, ${friend2} et ${friend3} ?` // fonction qui prend plusieurs paramètres
 }
 
-console.log(me2.presentMe());
+console.log(me.presentThreeFriends("John", "légende", "steve"));
