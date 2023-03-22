@@ -1,9 +1,20 @@
-let valeur = "valeur 5 de val"
+const tableau = [1,2,5];
 
-const stringMultiLigne = ` Je suis sur la ligne 1
-${valeur}
-je suis sur la ligne 3
-je suis sur la ligne 4
-`
+const d = tableau[0];
+const e = tableau[1];
 
-console.log(stringMultiLigne);
+console.log(d);
+console.log(e);
+
+
+console.log("###############");
+/**
+ * Destructuring Arrays pour simplifier
+ */
+
+const nombres = [1,2,5];
+
+const [a,b] = nombres;
+
+console.log(a);
+console.log(b);
