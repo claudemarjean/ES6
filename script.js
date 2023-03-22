@@ -1,12 +1,14 @@
-
-const me = {
-    name: "John",
-    presentFriends: friend => { // on met dans cette accolade si une code à executer non pas directement de valeur retourner
-        const presentation = `Tu connais ${friend} ?`;
-        console.log(presentation);
-        return presentation;
-    }
+const classicFunction = function (){
+    console.log(this);
 }
 
-me.presentFriends("Kevin");
+const arrowFunction = () => console.log(this);
 
+const me = {
+    name : "John",
+    presentClassic : classicFunction,
+    presentArrow : arrowFunction
+}
+
+me.presentClassic();//donné l'objet me
+me.presentArrow();//donne l'objet window (l'objet global)
